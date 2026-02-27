@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/png" href="/greeting.png" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@1.0.4/css/bulma.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Greetings</title>
+  </head>
+  <body class="has-background-info-light">
+    <div class="container">
+      <div class="greeting-card panel p-6 has-background-white flex flex-direction-column">
+        <div id="app"></div>
+        <form id="greeting-form">
+          <div class="field mb-4">
+            <label class="label">Name</label>
+            <div class="control">
+              <input id="name-input" class="input" type="text" placeholder="Enter a name">
+            </div>
+          </div>
+          <div class="field mb-4">
+            <label class="label">Greeting Type</label>
+            <div class="select is-fullwidth">
+              <select id="greeting-type">
+                <option value="default">Based on Today</option>
+              </select>
+            </div>
+          </div>
+          <button id="btn-show-greeting" class=" button is-link is-medium" disabled>Show Greeting</button>
+        </form>
+      </div>
+    </div>
+    
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>

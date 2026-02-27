@@ -24,7 +24,7 @@ function App() {
   function handleReset() {
     setCount(0);
   }
-
+ 
   return (
     <>
       <h1>Simple Counter</h1>
